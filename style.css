@@ -1,0 +1,32 @@
+/* ---- 全局設定 ---- */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #020c1b; /* 你原本的背景色，保留 */
+}
+
+/* ---- 所有 canvas 預設一致定位 ---- */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+/* ---- Laser Grid 背景（最底層） ---- */
+#grid {
+  z-index: 0;
+}
+
+/* ---- 粒子 Logo（中間層） ---- */
+#canvas {
+  z-index: 10;
+}
+
+/* ---- 外框電流（最上層） ---- */
+#outline {
+  z-index: 20;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>MONSTER LAB Intro</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- Laser Grid 背景 -->
+  <canvas id="grid"></canvas>
+
+  <!-- 粒子 LOGO Canvas -->
+  <canvas id="canvas"></canvas>
+
+  <!-- 外框電流 Canvas -->
+  <canvas id="outline"></canvas>
+
+  <script src="./script.js"></script>
+
+  <!-- 🔥 動畫結束後跳首頁（正確位置） -->
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://monster-lab.easy-gogo.com/";
+    }, 3500); // 動畫 3.5 秒結束後跳轉
+  </script>
+
+</body>
+</html>
